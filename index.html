@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Doto:wght@700&family=Nabla&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <title>Mini Slot Machine</title>
+</head>
+
+<body
+    class="w-screen h-screen flex p-16 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 to-slate-950 border-slate-800">
+    <div
+        class="w-full h-full text-white box-border border-3 border-blue-500/20 rounded-lg shadow-md bg-gradient-to-br from-blue-950/60 via-slate-900 to-sky-950/30 border-blue-500/20 p-6 md:p-8 justify-self-center">
+        <!-- main body -->
+        <h1 class="justify-self-center p-8 pt-18 pb-18 lg:pb-8 font-['Nabla'] font-normal not-italic [font-variation-settings:'EDPT'_100,'EHLT'_12] text-4xl sm:text-4xl md:text-6xl lg:text-7xl">Slot Machine</h1>
+
+        <div class="flex justify-center items-center text-white columns-2 p-4 pb-2">
+            <!-- coins -->
+
+            <a href="https://www.flaticon.com/free-stickers/coin" title="coin stickers">
+                <img src="images/money.png" alt="Coin sticker" class="w-12 sm:w-16 md:w-20 lg:w-24">
+            </a>
+            <p id="coins" class="pl-2 text-12 sm:text-sm md:text-xl lg:text-2xl">0</p>
+        </div>
+        <div class="justify-self-center columns-3 p-8">
+            <!-- slots machine -->
+            <div class="w-24 h-24 bg-blue-900"></div>
+            <div class="w-24 h-24 bg-blue-900"></div>
+            <div class="w-24 h-24 bg-blue-900"></div>
+        </div>
+        <div class="flex justify-center items-center p-5">
+            <!-- spin button -->
+            <button onclick="spin" class="border rounded-lg p-2 pl-4 pr-4">SPIN</button>
+        </div>
+    </div>
+</body>
+
+</html>
