@@ -12,7 +12,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-
     <title>Mini Slot Machine</title>
 </head>
 
@@ -26,9 +25,8 @@
         <div class="flex justify-center items-center text-white columns-2 p-4 pb-2">
             <!-- coins -->
 
-            <a href="https://www.flaticon.com/free-stickers/coin" title="coin stickers">
-                <img src="images/money.png" alt="Coin sticker" class="w-12 sm:w-16 md:w-20 lg:w-24">
-            </a>
+            <img src="images/money.png" alt="Coin sticker" class="w-12 sm:w-16 md:w-20 lg:w-24">
+            
             <p id="coins" class="pl-2 text-12 sm:text-sm md:text-xl lg:text-2xl">0</p>
         </div>
         <div class="justify-self-center columns-3 p-8">
@@ -39,9 +37,11 @@
         </div>
         <div class="flex justify-center items-center p-5">
             <!-- spin button -->
-            <button onclick="spin" class="border rounded-lg p-2 pl-4 pr-4">SPIN</button>
+            <button onclick="spin()" class="border rounded-lg p-2 pl-4 pr-4">SPIN</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
